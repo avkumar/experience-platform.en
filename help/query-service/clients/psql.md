@@ -18,7 +18,7 @@ Open a terminal window and issue these three commands:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Please use psql version 11.x for the query service to work.
+Please use psql version 11.9 for the query service to work.
 ```shell
 brew install postgresql@11
 brew services start postgresql@11
@@ -43,7 +43,7 @@ You can verify the psql version as follows:
 
 you should see something like this
 ```shell
- psql (PostgreSQL) 11.x
+ psql (PostgreSQL) 11.9
  ```
 
 
