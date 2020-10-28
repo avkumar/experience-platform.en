@@ -18,8 +18,11 @@ Open a terminal window and issue these three commands:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+Please use psql version 11.0 for the query service to work.
 ```shell
-brew install postgres
+brew install postgresql@11
+brew services start postgresql@11
+brew link postgresql@11 --force
 ```
 
 ```shell
@@ -31,6 +34,9 @@ After issuing these commands, you should see the following:
 ```shell
 /usr/local/bin/psql
 ```
+
+
+
 
 ## Install [!DNL Postgres] on a PC
 
